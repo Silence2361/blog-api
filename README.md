@@ -17,7 +17,7 @@ npm run start
 npm run test
 
 # 7. Swagger-документация
-http://localhost:3000/api
+http://localhost:3000/api/docs
 
 
 

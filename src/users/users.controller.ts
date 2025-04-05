@@ -27,7 +27,7 @@ import { JwtAuthGuard } from '../jwt/jwt-auth.guard';
 @ApiTags('Users')
 @Controller('users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) { }
 
   @Post()
   @ApiOperation({ summary: 'Создать нового пользователя' })

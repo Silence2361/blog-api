@@ -32,4 +32,4 @@ import { RedisModule } from './redis/redis.module';
   controllers: [],
   providers: [AuthService],
 })
-export class AppModule { }
+export class AppModule {}

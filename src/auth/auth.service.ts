@@ -19,7 +19,7 @@ export class AuthService {
   constructor(
     private readonly userRepository: UserRepository,
     private readonly jwtService: JwtService,
-  ) {}
+  ) { }
 
   async register(credentials: IRegistration): Promise<IRegistrationResponse> {
     const { email, name, password } = credentials;
@@ -56,7 +56,7 @@ export class AuthService {
       throw new UnauthorizedException('Invalid credentials');
     }
 
-    const payload = { user_id: user.id };
+    const payload = { userId: user.id };
 
     const access_token = await this.jwtService.signAsync(payload);
 
